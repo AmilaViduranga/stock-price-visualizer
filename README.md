@@ -2,58 +2,29 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
-## Development server
+## About Finnhub Stock API
 
-To start a local development server, run:
+To acquire a realtime feeling to the application I have used [Finhub](https://finnhub.io/) API. It has [Websocket](https://finnhub.io/docs/api/websocket-trades) and some other relevant endpoints. Most of the endpoints are free to use. Bellow purposes I have used REST APIS available.
 
-```bash
-ng serve
-```
+- To get [quote](https://finnhub.io/docs/api/quote)
+- To get [company details](https://finnhub.io/docs/api/company-profile)
+- To get [Metric Related Data](https://finnhub.io/docs/api/sector-metrics)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Sample Outputs
+<img width="1234" alt="image" src="https://github.com/user-attachments/assets/2046a332-6b7a-44d3-b587-052ed0588b9e" />
 
-## Code scaffolding
+<img width="1234" alt="image" src="https://github.com/user-attachments/assets/ce6b4051-bb80-4f9e-a9d9-4869ee410e76" />
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Unit test Results
 
-```bash
-ng generate component component-name
-```
+<img width="1198" alt="image" src="https://github.com/user-attachments/assets/0ad4b34b-de55-47ac-a35a-c00c925398bd" />
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## How to Run Application
 
-```bash
-ng generate --help
-```
+- First clone the project
+- Navigate to downloaded project root locations
+- Run "npm install" or "npm install --legacy-peer-deps"
+- Run "npm start" or "ng serve"
+- If above step failed due to cli issue install angular cli [globally](https://angular.dev/tools/cli/setup-local#example-1)
+- If you needed to run unit tests, execute "npm run test" in another new terminal 
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
