@@ -1,0 +1,65 @@
+<div
+  class="stock-card"
+  [ngClass]="{
+    enabled: stockSummary.enabled,
+    disabled: !stockSummary.enabled
+  }"
+>
+  <div class="symbol">{{ stockSummary.symbol }}</div>
+
+  <div class="price">
+    {{ stockSummary.price ? (stockSummary.price | currency : "USD") : "-" }}
+  </div>
+
+  <div class="detail">
+    <div class="label">Daily High</div>
+    <div class="value">
+      {{
+        stockSummary.dailyHigh
+          ? (stockSummary.dailyHigh | currency : "USD")
+          : "-"
+      }}
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Daily Low</div>
+    <div class="value">
+      {{
+        stockSummary.dailyLow ? (stockSummary.dailyLow | currency : "USD") : "-"
+      }}
+    </div>
+  </div>
+
+  <div class="detail">
+    <div class="label">Name</div>
+    <div class="value">
+      {{ stockSummary.name }}
+    </div>
+  </div>
+
+  <div class="detail desktop-only">
+    <div class="label">52W High</div>
+    <div class="value">
+      {{
+        stockSummary.yearHigh ? (stockSummary.yearHigh | currency : "USD") : "-"
+      }}
+    </div>
+  </div>
+
+  <div class="detail desktop-only">
+    <div class="label">52W Low</div>
+    <div class="value">
+      {{
+        stockSummary.yearLow ? (stockSummary.yearLow | currency : "USD") : "-"
+      }}
+    </div>
+  </div>
+
+  <div class="toggle-wrapper" (click)="toggleSubscription(stockSummary)">
+    <div class="pill-toggle" [class.off]="!stockSummary.enabled">
+      <span>{{ stockSummary.enabled ? "ON" : "OFF" }}</span>
+      <div class="circle"></div>
+    </div>
+  </div>
+</div>

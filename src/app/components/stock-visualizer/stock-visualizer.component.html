@@ -1,0 +1,13 @@
+<div class="stock-header">
+  <h1>Stock Price Summary Dashboard</h1>
+  <p class="subtext">Assignment by <strong>Amila Welikala</strong></p>
+</div>
+
+<div class="stock-grid">
+  @for (stockSummary of stockSummaries; track $index) {
+  <app-stock-card
+    (toggleSubscriptionEmiter)="toggleSubscription($event)"
+    [stockSummary]="stockSummary"
+  />
+  }
+</div>

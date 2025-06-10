@@ -1,0 +1,25 @@
+.stock-header {
+  text-align: center;
+  margin: 2rem 0;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+}
+
+.stock-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-family: "Arial", sans-serif;
+}
